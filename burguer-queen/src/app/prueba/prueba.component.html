@@ -1,40 +1,47 @@
 
-
-
-
-<div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-circule">
-    <button class="mdl-button mdl-button--fab" id="change-color">1</button>
-    <button class="mdl-button mdl-button--fab">2</button>
-    <button class="mdl-button mdl-button--fab">3</button>
-    <button class="mdl-button mdl-button--fab">4</button>
-</div>
-<br>
-<br>
-<div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-square">
-    <button class="mdl-button mdl-button--raised">Mesa 1</button>
-    <button class="mdl-button mdl-button--raised">Mesa 2</button>
-</div>
-<br>
-<br>
-<div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-square-bg">
-    <button class="mdl-button mdl-button--raised rectangule">Mesa 3</button>
-</div>
-<br>
-<br>
-<div  fxLayout = "row"  fxLayoutAlign = "center center">
-    <button class="mdl-button mdl-button--fab">5</button>
-    <button class="mdl-button mdl-button--fab">6</button>
-    <button class="mdl-button mdl-button--fab">7</button>
-    <button class="mdl-button mdl-button--fab">8</button>
-    <button class="mdl-button mdl-button--fab">9</button>
-    <button class="mdl-button mdl-button--fab">10</button>
-    <button class="mdl-button mdl-button--fab">11</button>
-    <button class="mdl-button mdl-button--fab">12</button>
-</div>
-<br>
-<br>
-<div  fxLayout = "row"  fxLayoutAlign = "center center">
-    <button class="mdl-button mdl-button--raised">Mesa 4</button>
-    <button class="mdl-button mdl-button--raised">Mesa 5</button>
-</div>
-
+<!-- Botones de barra superior de barra con Layout -->
+<!-- routerLinkActive="active"   routerLink="/take-order" se agrega a cada boton para dirigir a los botones a una nueva pagina y componente en este caso a take-order . -->
+<div class="container" fxLayout = "column"  fxLayoutAlign = "start center">
+    <div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-circule">
+        <button class="mdl-button mdl-button--fab" id="change-color" routerLinkActive="active"   routerLink="/take-order">1</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">2</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">3</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">4</button>
+    </div>
+    <br>
+    <br>
+    <!-- Botones de mesas -->
+    <div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-square">
+        <button class="mdl-button mdl-button--raised" routerLinkActive="active"   routerLink="/take-order">Mesa 1</button>
+        <button class="mdl-button mdl-button--raised" routerLinkActive="active"   routerLink="/take-order">Mesa 2</button>
+    </div>
+    <br>
+    <br>
+    <!-- Boton de mesa del centro -->
+    <div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-square-bg">
+        <button class="mdl-button mdl-button--raised rectangule" routerLinkActive="active"   routerLink="/take-order">Mesa 3</button>
+    </div>
+    <br>
+    <br>
+    <!-- Botones de barra inferior -->
+    <div  fxLayout = "row"  fxLayoutAlign = "center center">
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">5</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">6</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">7</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">8</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">9</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order"> 10</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">11</button>
+        <button class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/take-order">12</button>
+    </div>
+    <br>
+    <br>
+    <!-- Botones de mesas de pantalla inferior -->
+    <div  fxLayout = "row"  fxLayoutAlign = "center center">
+        <button class="mdl-button mdl-button--raised" routerLinkActive="active"   routerLink="/take-order">Mesa 4</button>
+        <button class="mdl-button mdl-button--raised" routerLinkActive="active"   routerLink="/take-order">Mesa 5</button>
+    </div>
+    </div>
+    
+    
+    

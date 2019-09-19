@@ -5,6 +5,7 @@
     <p class="administrator">ADMINISTRADOR</p>
   </div>
 
+<!-- Lista de enlaces de la sidenav -->
 <div class="list-administrator">
   <ul>
     <li><a href="">Estadísticas</a></li>
@@ -15,12 +16,17 @@
     <li><a href="">Cerrar Sesión</a></li>
   </ul>
 </div>
-  </mat-drawer>
+  </mat-drawer> 
 
-  <div class="example-sidenav-content" fxLayout = "row"  fxLayoutAlign = "start center">
-    <button class = "nav" type="button"  (click)="drawer.toggle()">
+  <!-- Efecto de deslizamiento sidenav -->
+  <div class="example-sidenav-content" fxLayout = "row"  fxLayoutAlign = " center start">
+    <div class="button-administrator" fxLayout = "row"  fxLayoutAlign = "start center">
+    <button class = "nav" type="button"  (click)="drawer.toggle()" fxLayout = "row"  fxLayoutAlign = "center start">
       ADMINISTRADOR
     </button>
+    </div>
+  <ng-content></ng-content>
+
   </div>
 
 </mat-drawer-container>
