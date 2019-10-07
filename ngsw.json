@@ -1,0 +1,86 @@
+{
+  "configVersion": 1,
+  "timestamp": 1570479368931,
+  "index": "/MEX008-FE-Burger-Queen/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/MEX008-FE-Burger-Queen/favicon.ico",
+        "/MEX008-FE-Burger-Queen/index.html",
+        "/MEX008-FE-Burger-Queen/main-es2015.4afb33b93b2f809d89bd.js",
+        "/MEX008-FE-Burger-Queen/main-es5.4afb33b93b2f809d89bd.js",
+        "/MEX008-FE-Burger-Queen/manifest.webmanifest",
+        "/MEX008-FE-Burger-Queen/polyfills-es2015.0c367da301dfce13c189.js",
+        "/MEX008-FE-Burger-Queen/polyfills-es5.fcc138b5815cd4c4c808.js",
+        "/MEX008-FE-Burger-Queen/runtime-es2015.85f895af57b038f1e5b4.js",
+        "/MEX008-FE-Burger-Queen/runtime-es5.85f895af57b038f1e5b4.js",
+        "/MEX008-FE-Burger-Queen/styles.81b7a2a0b0c6facba4e2.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-128x128.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-144x144.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-152x152.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-192x192.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-384x384.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-512x512.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-72x72.png",
+        "/MEX008-FE-Burger-Queen/assets/icons/icon-96x96.png",
+        "/MEX008-FE-Burger-Queen/assets/icons8-símbolo-vaciar-50.png",
+        "/MEX008-FE-Burger-Queen/assets/logo.png",
+        "/MEX008-FE-Burger-Queen/assets/products.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/MEX008-FE-Burger-Queen/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/MEX008-FE-Burger-Queen/assets/icons8-símbolo-vaciar-50.png": "ea5ead2478641401c94b1fdde18c2849b4af8ae5",
+    "/MEX008-FE-Burger-Queen/assets/logo.png": "688b270bed5730ae0ac53649853ad8e28b5a3126",
+    "/MEX008-FE-Burger-Queen/assets/products.json": "944a55f11cdcc7ef0ed1b9e6906bcedd967cea3a",
+    "/MEX008-FE-Burger-Queen/favicon.ico": "9a52273cda1ae6dd81b4f7a20d1860f68d85c723",
+    "/MEX008-FE-Burger-Queen/index.html": "b98e6193248b1a5425c8468e5a9f049327494e5d",
+    "/MEX008-FE-Burger-Queen/main-es2015.4afb33b93b2f809d89bd.js": "cd381a0c0f23c9c0818b66dcca56ccb83900bb1c",
+    "/MEX008-FE-Burger-Queen/main-es5.4afb33b93b2f809d89bd.js": "6b738028d392a92bc649d6bcf0c471bc905f7dbd",
+    "/MEX008-FE-Burger-Queen/manifest.webmanifest": "e7a028fcff3bff28d2865c9c166dffbe2a809c58",
+    "/MEX008-FE-Burger-Queen/polyfills-es2015.0c367da301dfce13c189.js": "f2ccbe2ca4a43b9d945c6dc4aa498cf13cc6a613",
+    "/MEX008-FE-Burger-Queen/polyfills-es5.fcc138b5815cd4c4c808.js": "adbf9753787b0a9e4b67a089d37c147be01e0009",
+    "/MEX008-FE-Burger-Queen/runtime-es2015.85f895af57b038f1e5b4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/MEX008-FE-Burger-Queen/runtime-es5.85f895af57b038f1e5b4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/MEX008-FE-Burger-Queen/styles.81b7a2a0b0c6facba4e2.css": "e64e03080277cf2b9da1275a512638a28769114f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
