@@ -7,7 +7,7 @@
     <div  fxLayout = "row"  fxLayoutAlign = "center center" class="btn-circule">
         <button class="mdl-button mdl-button--fab" id="change-color" (click)="openModal()">1</button>
         <!-- silvia -->
-        <button (click)= "save($event)" [style.background-color]= "isActive ? '' : 'blue'" class="mdl-button mdl-button--fab" (click)="openModal()">2</button>
+        <button class="mdl-button mdl-button--fab" (click)="openModal()">2</button>
         <button class="mdl-button mdl-button--fab" routerLinkActive="active"   (click)="openModal()">3</button>
         <button [style.background-color]= "isActive ? '' : 'blue'" class="mdl-button mdl-button--fab" (click)="openModal()">4</button>
     </div>
@@ -37,7 +37,7 @@
         <button class="mdl-button mdl-button--fab" (click)="openModal()">9</button>
         <button class="mdl-button mdl-button--fab" (click)="openModal()"> 10</button>
         <button class="mdl-button mdl-button--fab" (click)="openModal()">11</button>
-        <button (click)= "save($event)" [style.background-color]= "isActive ? 'grey' : 'blue'" class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/bill">12</button>
+        <button (click)=openModal() class="mdl-button mdl-button--fab" routerLinkActive="active"   routerLink="/bill">12</button>
     </div>
     <br>
     <br>

@@ -8,8 +8,8 @@ import { DataSource } from '@angular/cdk/table';
 export interface PeriodicElement {
   orderNumber: number;
   customerName: string;
-  products:string;
-  totalOrder:number;
+  products: string;
+  totalOrder: number;
 }
 @Component({
   selector: 'app-menu',
@@ -17,9 +17,10 @@ export interface PeriodicElement {
   styleUrls: ['menu.component.css'],
 })
 export class MenuComponent {
-  displayedColumns: string[] = ['orderNumber', 'customerName','actions'];
-  dataSource= new MatTableDataSource ();
-  constructor(private orderService: OrdersService){}
+  displayedColumns: string[] = ['orderNumber', 'customerName', 'actions'];
+  dataSource = new MatTableDataSource ();
+  private order: any;
+    constructor(private orderService: OrdersService) {}
   showFiller = false;
   "products" = [
     {
@@ -75,7 +76,7 @@ export class MenuComponent {
   removeItemOrder =(order) =>{
     let index = this.tempOrder.indexOf(order);
     if (index > -1) this.tempOrder.splice(index, 1);
-  }
+  };
   onSubmit(){
     console.log(this.orderService.myForm.value);
     // Agregando al array temporal el # de orden y el cliente
@@ -92,19 +93,17 @@ export class MenuComponent {
     // Reinicializando el formulario
     this.orderService.myForm.reset();
   }
-  ngAfterViewInit(){
+  // tslint:disable-next-line:use-lifecycle-interface
+  ngAfterViewInit() {
     this.dataSource.sort = this.sort;
   }
-  getAllOrders(){
-    this.orderService.getOrders().subscribe(res =>{
+  getAllOrders() {
+    this.orderService.getOrders().subscribe(res => {
       this.dataSource.data = res;
-    })
+    });
   }
-  onDelete(id: string){
+  onDelete(id: string) {
     this.orderService.deleteOrders(id);
   }
-  onChangeStatus(order: any){
-    order.completed = true;
-    this.orderService.updateOrders(order);
-  }
+
 }

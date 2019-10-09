@@ -25,19 +25,35 @@
         </button>
       </ol>
     </div>
+
+    <button
+             [routerLink]="['/']"
+             routerLinkActive="router-link-active"
+             class="btn-cancel"><mat-icon class="mat-icon-2">cancel</mat-icon>
+    </button>
   </div>
 
   <div class="container2" fxLayout="column" fxLayoutAlign="center start">
     <mat-drawer-container class="example-container" autosize fxLayout="row" fxLayoutAlign="start center">
       <mat-drawer #drawer class="example-sidenav" mode="side" fxLayout="column" fxLayoutAlign="start center">
         <div class="container-hamburguers">
-
           <div fxLayout="row" fxLayoutAlign="space-evenly start" class="list-hamburguer">
             <button class="nameProduct" *ngFor="let product of products" (click)="onAddProduct(product)">
               {{product.name}}
             </button>
           </div>
+<!--          <table>-->
+<!--            <tr>-->
+<!--              <td><img src="./assets/malicia.png" alt="malicia"></td>-->
+<!--              <td><img src="./assets/gula.png" alt="gula"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <td><img src="./assets/encarnacion.png" alt="encarnacion"></td>-->
+<!--              <td><img src="./assets/soberbia.png" alt="soberbia"></td>-->
+<!--            </tr>-->
+<!--          </table>-->
         </div>
+
       </mat-drawer>
 
     </mat-drawer-container>
@@ -103,7 +119,7 @@
         <p>$ <span>{{totalOrder}}</span></p>
       </div>
       <br>
-      <button class="btn-sendOrder" (click)="onSubmit()">Enviar a cocina</button>
+      <button class="btn-sendOrder" (click)="onSubmit()" >Enviar a cocina</button>
 
       <!-- </div> -->
 
