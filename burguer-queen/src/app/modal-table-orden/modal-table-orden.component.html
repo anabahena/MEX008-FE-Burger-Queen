@@ -1,26 +1,18 @@
-<!-- <div class="modalOrden">
-    <mat-form-field class= "input-order">
-        <input matInput placeholder="Order Number"> 
-    </mat-form-field>
-    <mat-form-field class= "input-customer">
-        <input matInput placeholder="Customer">         
-    </mat-form-field>
-    <button mat-raised-button routerLinkActive="active"   routerLink="/take-order">Enviar</button>
-</div> -->
 
-<form [formGroup]="this.orderService.myForm" (ngSubmit)="onSubmit()" class="modalOrden">
-        <table cellspacing="0">
+<form [formGroup]="this.orderService.myForm" class="modalOrden">
+  <h4>Ingresa los siguientes datos:</h4>
+        <table cellspacing="0" >
           <tr>
             <td>
               <mat-form-field>
-                <input matInput #orderNumber maxlength="3" placeholder="Order Numbrer" formControlName="orderNumber">
+                <input matInput placeholder="Input" #orderNumber maxlength="3" placeholder="Número de orden" formControlName="orderNumber">
               </mat-form-field>
             </td>
           </tr>
           <tr>
             <td>
               <mat-form-field>
-                <input matInput #customerName maxlength="13" placeholder="Customer" formControlName="customerName">
+                <input matInput placeholder="Input" #customerName maxlength="13" placeholder="Nombre de Cliente" formControlName="customerName">
               </mat-form-field>
             </td>
           </tr>
@@ -31,3 +23,6 @@
           </tr>
         </table>
       </form>
+
+
+      

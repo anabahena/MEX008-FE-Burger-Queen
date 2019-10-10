@@ -39,6 +39,7 @@ export class OrdersService {
     orderNumber: new FormControl(''),
     order: new FormControl(''),
     completed: new FormControl(false)
+    
   });
   getOrders() {
     return this.orders;
