@@ -21,13 +21,6 @@
 
   .example-sidenav-content{
     position:fixed;
-    /* -webkit-box-shadow:5px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:5px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:5px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    height: 100vh;
-    width: 80vw;
-    border-radius: 0 33px 33px 0;*/
-
   }
 
   .example-sidenav-content button{
@@ -122,4 +115,32 @@ div .rectangule{
   width: 32.2%;
 
 }
+
+/*pruebas*/
+
+
+/*#container { display:block; }*/
+/*@media only screen and (orientation:portrait){*/
+/*  #container {*/
+/*    -webkit-transform: rotate(90deg);*/
+/*    -moz-transform: rotate(90deg);*/
+/*    -o-transform: rotate(90deg);*/
+/*    -ms-transform: rotate(90deg);*/
+/*    transform: rotate(90deg);*/
+/*  }*/
+
+/*}*/
+/*@media only screen and (orientation:landscape) {*/
+/*  #container {*/
+/*    -webkit-transform: rotate(0deg);*/
+/*    -moz-transform: rotate(0deg);*/
+/*    -o-transform: rotate(0deg);*/
+/*    -ms-transform: rotate(0deg);*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*}*/
+
+
+
+
 

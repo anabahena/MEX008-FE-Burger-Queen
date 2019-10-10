@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700&display=swap" rel="stylesheet">
 
 <div class="container" fxLayout="row" fxLayoutAlign="start">
   <div class="example-sidenav-content" fxLayout="column" fxLayoutAlign="center center">
@@ -11,35 +12,88 @@
         <button type="button" mat-button (click)="drawer.toggle();prueba('Hamburguesas')" class="button-mat">
           Hamburguesas
         </button>
+
         <button type="button" mat-button (click)="drawer.toggle();prueba('Pizzas')" class="button-mat">
-          Pizza
+
+          Pizzas
+
         </button>
         <button type="button" mat-button (click)="drawer.toggle();prueba('Ensaladas')" class="button-mat">
-          Ensalada
+          Ensaladas
         </button>
         <button type="button" mat-button (click)="drawer.toggle();prueba('Bebidas')" class="button-mat">
-          Bebida
+          Bebidas
         </button>
-        <button type="button" mat-button (click)="drawer.toggle();prueba('Paquetes')" class="button-mat">
-          Paquetes
+        <button type="button" mat-button (click)="drawer.toggle();prueba('Postres')" class="button-mat">
+          Postres
         </button>
       </ol>
     </div>
+
+    <button
+             [routerLink]="['/']"
+             routerLinkActive="router-link-active"
+             class="btn-cancel"><mat-icon class="mat-icon-2">cancel</mat-icon>
+    </button>
   </div>
 
   <div class="container2" fxLayout="column" fxLayoutAlign="center start">
     <mat-drawer-container class="example-container" autosize fxLayout="row" fxLayoutAlign="start center">
-      <mat-drawer #drawer class="example-sidenav" mode="side" fxLayout="column" fxLayoutAlign="start center">
-        <div class="container-hamburguers">
-
-          <div fxLayout="row" fxLayoutAlign="space-evenly start" class="list-hamburguer">
-            <button class="nameProduct" *ngFor="let product of products" (click)="onAddProduct(product)">
-              {{product.name}}
-            </button>
-          </div>
-        </div>
+      <mat-drawer #drawer  class="container-hamburguers" mode="side" fxLayout="column" fxLayoutAlign="start center">
+        <mat-grid-list  cols="2"  class="content-table" >
+          <mat-grid-tile class="content-table" *ngFor="let product of products" (click)="drawer2.toggle()">
+            <figure class="product-img"><img src="{{product.img}}" alt="{{product.name}}" ><p>{{product.name}}</p></figure>
+          </mat-grid-tile>
+        </mat-grid-list>
       </mat-drawer>
 
+      <mat-drawer #drawer2  class="product-modal" mode="side" fxLayout="column" fxLayoutAlign="start center">
+        <div class="boxText" *ngFor="let product of products">
+          <div class="title-product">
+            <p class="nameProduct" >{{product.name}}</p>
+            <figure class="product-img"><img src="{{product.img}}" alt="{{product.name}}" ></figure>
+          </div>
+
+
+          <fieldset>
+            <label>
+              <input type="radio" name="size">{{product.type[0]}}  ${{product.price[0]}}
+            </label>
+            <label>
+              <input type="radio" name="combo" >
+            </label> {{product.type[1]}}  ${{product.price[1]}}
+          </fieldset>
+          <fieldset>
+            <legend>Pan:</legend>
+            <label>
+              <input type="radio" name="masa madre" >
+            </label>{{product.pan[0]}}
+            <label>
+              <input type="radio" name="pan tradicional" >
+            </label>{{product.pan[1]}}
+          </fieldset>
+          <fieldset>
+            <legend>Ingredientes:</legend>
+            <label>
+              <input type="radio" name="pan" value="con todos los ingredientes">
+            </label>{{product.ingredientes[0]}}
+            <label>
+              <input type="radio" name="ingredients" value="sin algun ingrediente">
+            </label> {{product.ingredientes[1]}}
+          </fieldset>
+          <p>Especificaciones: <input class="especifics" type="text"></p>
+          <div class="contend-btn">
+            <button class="save-btn" (click)="onAddProduct(product)">
+              Guardar
+            </button>
+            <button class="cancel-btn" >
+              Cancelar
+            </button>
+          </div>
+
+        </div>
+
+      </mat-drawer>
     </mat-drawer-container>
   </div>
 
@@ -104,7 +158,7 @@
         <p>$ <span>{{totalOrder}}</span></p>
       </div>
       <br>
-      <button class="btn-sendOrder" (click)="onSubmit()">Enviar a cocina</button>
+      <button class="btn-sendOrder" (click)="onSubmit()" >Enviar a cocina</button>
 
       <!-- </div> -->
 
@@ -112,50 +166,3 @@
   </div>
 </div>
 
-
-<!-- Especificaciones de producto -->
-
-
-<!-- <div fxLayout="column" fxLayoutAlign="start center"> -->
-<!-- <fieldset>
-    <label>
-      <input type="radio" name="size" value="50">Individual ($50)
-    </label>
-    <label>
-      <input type="radio" name="combo" value="65">
-    </label> En combo ($65)
-  </fieldset> -->
-<!-- </div> -->
-
-<!-- <div fxLayout="column" fxLayoutAlign="start center"> -->
-<!-- <fieldset>
-    <legend>Pan:</legend>
-    <label>
-      <input type="radio" name="pan" value="pan">
-    </label>Masa madre
-    <label>
-      <input type="radio" name="ingredients" value="ingredients">
-    </label> Tradicional
-  </fieldset> -->
-<!-- </div> -->
-
-<!-- <div fxLayout="column" fxLayoutAlign="start center"> -->
-<!-- <fieldset>
-    <legend>Ingredientes:</legend>
-    <label>
-      <input type="radio" name="pan" value="pan">
-    </label>Masa madre
-    <label>
-      <input type="radio" name="ingredients" value="ingredients">
-    </label> Tradicional
-  </fieldset>
-  <p>Especificaciones: <input class="especifics" type="text"></p> -->
-<!-- </div> -->
-
-
-
-
-<!-- </div> -->
-
-<!-- </div> -->
-<!-- </div> -->

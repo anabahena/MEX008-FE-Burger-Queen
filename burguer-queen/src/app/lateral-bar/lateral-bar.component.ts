@@ -47,6 +47,7 @@ export class LateralBarComponent {
     this.userService.signOut()
       .then(() => {
         sessionStorage.clear();
+
       }).catch((error) => {
       console.log(error);
     });

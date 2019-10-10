@@ -4,7 +4,7 @@
     font-size: 16px;
 }
 
-.container{
+.container {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -12,13 +12,13 @@
 }
 
 .example-container {
-    margin:0;
-    padding: 0px;
-    width: 60vw;
-    height: 17vh;
-    background: #6C727C;
+  margin: 0;
+  padding: 0;
+  width: 38vw;
+  height: 69vh;
+  background:#6C727C ;
 
-  }
+}
 
   .example-sidenav-content {
     width: 13vw;
@@ -35,14 +35,14 @@
     margin: 0;
     /* border: 1px white solid; */
     background: #F7F7F7;
-    width: 60vw;
+    width: 57vw;
     height: 17vh;
   }
 
 .container2{
     margin:0;
     padding: 0;
-    width: 65vw;
+    width: 61vw;
     height: 100vh;
     background: #6C727C;
 }
@@ -69,7 +69,7 @@ background: white;
 
 .image img{
     width: 8vw;
-    height: 15vh;
+    height: 10vh;
     background: #F7F7F7;
 }
 
@@ -78,7 +78,7 @@ background: white;
     border-radius: 30px;
 }
 
-.list-hamburguer{
+.list-hamburguer {
     padding: 0;
     margin: 0;
     width: 60vw;
@@ -100,13 +100,15 @@ background: white;
     padding: 0;
 }
 
-.container-hamburguers{
-    border: 1px solid white;
+.container-hamburguers {
+    border: none;
     margin:0;
     padding: 0;
-    width: 60vw;
-    height: 17vh;
-    background: #F7F7F7;
+    /*padding: 2em 1em 0 1em;*/
+    border-radius: 0  10px 10px  0;
+    width: 32vw;
+    height: 69vh;
+    background: #f7f7f7;
 }
 
 .button-mat{
@@ -252,7 +254,8 @@ background: white;
 
   .table {
   width: 25vw;
-  height: 2vh;
+  height: 1vh;
+  overflow: scroll;
   }
 
   .table div{
@@ -264,12 +267,142 @@ background: white;
       cursor: pointer;
     }
 
-    .btn-order {
+
+    .btn-cancel {
       border: none;
       background: #F7F7F7;
+
     }
 
-    .mat-icon-clear {
-      font-size: 37px;
+    .mat-icon-2 {
+     font-size: 37px;
+      padding-top: 2em;
     }
+
+
+.content-table {
+  margin: 0;
+  padding: 0;
+}
+
+
+.content-table p {
+    margin: 0.5em  0;
+    padding: 0;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Barlow Semi Condensed, Bold Italic, sans-serif;
+
+
+  }
+
+
+.product-img {
+  margin: 0;
+  width: 9em;
+  text-align: center;
+
+}
+
+/*modal para hamburguesa*/
+
+.product-modal {
+  width: 38vw!important;
+  height: 69vh!important;
+  background: #F7F7F7;
+  border-radius: 0  10px 10px  0!important;
+  opacity: 1;
+}
+
+.title-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxText {
+  padding: 2em 3em;
+}
+
+.nameProduct {
+  text-align: left;
+  font-family:Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #000000;
+  background: #F7F7F7
+}
+
+.contend-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.save-btn {
+  margin: 2em 0;
+  width: 90px;
+  height: 37px;
+  background: #F7F7F7 ;
+  border:  #F7F7F7 solid 1px;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 24px;
+  text-align: center;
+  font-family:  Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+.cancel-btn {
+  margin: 2em 2em 2em 1em;
+  width: 90px;
+  height: 37px;
+  background: #F7F7F7 ;
+  border:  #F7F7F7 solid 1px;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 24px;
+  text-align: center;
+  font-family:  Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+button:hover{
+  background-color: #FFE867;
+}
+
+fieldset {
+  border: none
+}
+
+.especifics {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: black solid 1px;
+  background: #F7F7F7;
+  color: black;
+}
+
+.btn-order {
+  border: none;
+  background: #F7F7F7;
+}
+
+.mat-icon-clear {
+  font-size: 37px;
+}
+
+
+@media (min-device-width :768px){
+
+  .container-hamburguers {
+    width: 37vw;
+    height: 57vh;
+  }
+
+}
+
 
