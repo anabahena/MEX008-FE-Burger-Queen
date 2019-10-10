@@ -17,7 +17,9 @@
         <li><a href="">Calendario</a></li>
         <li><a href="">Menú</a></li>
         <li><a href="">Staff</a></li>
-        <li><a  type="button" (click)="logout()" ><u><em>Cerrar Sesión</em></u></a></li>
+
+        <li><a type="button" (click)="logout()" ><u><em>Cerrar Sesión</em></u></a></li>
+
       </ul>
     </div>
   </mat-sidenav>
@@ -32,8 +34,10 @@
           </button>
         </div>
       </div>
+
       <ng-content></ng-content>
-    </div>
+      </div>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
 <div class="buttons-right">
