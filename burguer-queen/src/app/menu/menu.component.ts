@@ -20,79 +20,11 @@ export interface PeriodicElement {
 export class MenuComponent {
   displayedColumns: string[] = ['orderNumber', 'customerName','actions'];
   dataSource= new MatTableDataSource ();
-  constructor(private orderService: OrdersService){}
+  constructor(private orderService: OrdersService){
+
+  }
   showFiller = false;
-  "products" = [
-    {
-<<<<<<< HEAD
-      name: 'Soberbia',
-      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/soberbia.png?raw=true',
-      pan: ['Masa Madre', 'Tradicional'],
-      type: ['Individual', 'Combo'],
-      price: [50, 65],
-      ingredientes: ['Con todo', 'Sin'],
-      Especificaciones: []
-    },
-    {
-      name: 'Malicia',
-      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/malicia.png?raw=true',
-      pan: ['Masa Madre', 'Tradicional'],
-      type: ['Individual', 'Combo'],
-      price: [50, 65],
-      ingredientes: ['Con todo', 'Sin'],
-      Especificaciones: []
-    },
-    {
-      name: 'Encarnación',
-      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/encarnacion.png?raw=true',
-      pan: ['Masa Madre', 'Tradicional'],
-      type: ['Individual', 'Combo'],
-      price: [50, 65],
-      ingredientes: ['Con todo', 'Sin'],
-      Especificaciones: []
-    },
-    {
-      name: 'Gula',
-      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/gula.png?raw=true',
-      pan: ['Masa Madre', 'Tradicional'],
-      type: ['Individual', 'Combo'],
-      price: [50, 65],
-      ingredientes: ['Con todo', 'Sin'],
-      Especificaciones: []
-=======
-      name: "Soberbia",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    },
-    {
-      name: "Malicia",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    },
-    {
-      name: "Gula",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    },
-    {
-      name: "Encarnación",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
->>>>>>> 30d3aeb65e5693e186bfb4b24b9d06049d0da66e
-    }
-  ];
+  "products" = [];
 
   // Propiedades
   totalOrder = 0;
