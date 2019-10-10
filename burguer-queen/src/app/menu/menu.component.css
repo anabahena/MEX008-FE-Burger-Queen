@@ -301,10 +301,8 @@ background: white;
   margin: 0;
   width: 9em;
   text-align: center;
+
 }
-
-
-
 
 /*modal para hamburguesa*/
 
@@ -315,7 +313,7 @@ background: white;
   border-radius: 0  10px 10px  0!important;
   opacity: 1;
 }
-<<<<<<< HEAD
+
 .title-product {
   display: flex;
   justify-content: space-around;
@@ -387,6 +385,14 @@ fieldset {
   color: black;
 }
 
+.btn-order {
+  border: none;
+  background: #F7F7F7;
+}
+
+.mat-icon-clear {
+  font-size: 37px;
+}
 
 
 @media (min-device-width :768px){
@@ -397,15 +403,5 @@ fieldset {
   }
 
 }
-=======
 
-    .btn-order {
-      border: none;
-      background: #F7F7F7;
-    }
 
-    .mat-icon-clear {
-      font-size: 37px;
-    }
-
->>>>>>> 30d3aeb65e5693e186bfb4b24b9d06049d0da66e

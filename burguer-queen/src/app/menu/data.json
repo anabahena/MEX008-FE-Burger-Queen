@@ -2,6 +2,7 @@
     "Hamburguesas":[
         {
             "name": "Soberbia",
+            "img": "https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/soberbia.png?raw=true",
             "pan":["Masa Madre", "Tradicional"],
             "type":["Individual","Combo"],
             "price":[50, 65],
@@ -10,14 +11,7 @@
         },
         {
             "name": "Malicia",
-            "pan":["Masa Madre", "Tradicional"],
-            "type":["Individual","Combo"],
-            "price":[50, 65],
-            "ingredientes":["Con todo", "Sin"],
-            "Especificaciones":[]
-        },
-        {
-            "name": "Gula",
+            "img": "https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/malicia.png?raw=true",
             "pan":["Masa Madre", "Tradicional"],
             "type":["Individual","Combo"],
             "price":[50, 65],
@@ -26,51 +20,137 @@
         },
         {
             "name": "Encarnación",
+            "img": "https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/encarnacion.png?raw=true",
             "pan":["Masa Madre", "Tradicional"],
             "type":["Individual","Combo"],
             "price":[50, 65],
             "ingredientes":["Con todo", "Sin"],
             "Especificaciones":[]
+        },
+        {
+          "name": "Gula",
+          "img": "https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/gula.png?raw=true",
+          "pan":["Masa Madre", "Tradicional"],
+          "type":["Individual","Combo"],
+          "price":[50, 65],
+          "ingredientes":["Con todo", "Sin"],
+          "Especificaciones":[]
         }
-  ],
+    ],
   "Pizzas":[
         {
-            "name": "Hawaiana",
-            "pan":["Masa Madre", "Tradicional"],
-            "type":["Individual","Combo"],
-            "price":[50, 65],
+            "name": "Chaneque",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfoSB8lzaw0JbkuHaVLIzCYEMJexTf7SDPVEP89bX1fXTz2dvU",
+            "pan" :["Masa Madre", "Tradicional"],
+            "type":["Mediana","Grande","Familiar"],
+            "price":[150, 180, 210],
             "ingredientes":["Con todo", "Sin"],
             "Especificaciones":[]
+        },
+        {
+          "name": "Sodoma",
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSypCfbR1LT98tyhMiA2Bwm2ZJYUUP3PQAG22fNsLTHAqC8L8SK",
+          "pan":["Masa Madre", "Tradicional"],
+          "type":["Mediana","Grande","Familiar"],
+          "price":[130, 160, 190],
+          "ingredientes":["Con todo", "Sin"],
+          "Especificaciones":[]
+        },
+        {
+          "name": "Lujuria",
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMUr7Qa_PRQ5vlnKEL6JQzgTVnsocgDuacY5heqoyAhmzk9nX0",
+          "pan":["Masa Madre", "Tradicional"],
+          "type":["Mediana","Grande", "Familiar"],
+          "price":[150, 180, 210],
+          "ingredientes":["Con todo", "Sin"],
+          "Especificaciones":[]
+        },
+        {
+          "name": "Purgatorio",
+          "img":"https://lacarta.digital/embassypizzas/wp-content/uploads/2018/05/vegetariana.jpg",
+          "pan":["Masa Madre", "Tradicional"],
+          "type":["Mediana","Grande","Familiar"],
+          "price":[150, 180, 210],
+          "ingredientes":["Con todo", "Sin"],
+          "Especificaciones":[]
         }
     ],
     "Ensaladas":[
         {
-            "name": "Cesar",
-            "pan":["Masa Madre", "Tradicional"],
-            "type":["Individual","Combo"],
-            "price":[50, 65],
+            "name": "Delirium",
+          "img":"",
+            "pan":[],
+            "type":[],
+            "price":[50],
             "ingredientes":["Con todo", "Sin"],
             "Especificaciones":[]
-        }
-    ],   
+        },
+      {
+        "name": "Paraíso perdido",
+        "img":"",
+        "pan":["Masa Madre", "Tradicional"],
+        "type":["Individual","Combo"],
+        "price":[50, 65],
+        "ingredientes":["Con todo", "Sin"],
+        "Especificaciones":[]
+      }
+    ],
     "Bebidas":[
         {
-            "name": "Coca",
-            "pan":["Masa Madre", "Tradicional"],
-            "type":["Individual","Combo"],
-            "price":[50, 65],
+            "name": "Malteadas",
+          "img":"",
+            "pan":[],
+            "type":["Fresa","Chocomenta","Mazapán"],
+            "price":[50],
             "ingredientes":["Con todo", "Sin"],
             "Especificaciones":[]
-        }
+        },
+      {
+        "name": "Soda italiana",
+        "img":"",
+        "pan":[],
+        "type":["Piña y coco","Limón y jícama","Maracuyá", "Fresa y albahaca", "Manzana verde" , "Mango"],
+        "price":[45],
+        "ingredientes":["Con todo", "Sin"],
+        "Especificaciones":[]
+      }
     ],
-    "Paquetes":[
+    "Postres":[
         {
-            "name": "Paquete 1",
-            "pan":["Masa Madre", "Tradicional"],
-            "type":["Individual","Combo"],
-            "price":[50, 65],
+            "name": "Mousse",
+            "img":"",
+            "pan":[],
+            "type":[],
+            "price":[30],
             "ingredientes":["Con todo", "Sin"],
             "Especificaciones":[]
-        }
+        },
+      {
+        "name": "Vegatina de sabores",
+        "img":"",
+        "pan":[],
+        "type":[],
+        "price":[25],
+        "ingredientes":["Con todo", "Sin"],
+        "Especificaciones":[]
+      },
+      {
+        "name": "Hell girl",
+        "img":"",
+        "pan":[],
+        "type":[],
+        "price":[50],
+        "ingredientes":["Con todo", "Sin"],
+        "Especificaciones":[]
+      },
+      {
+        "name": "Pan dulce",
+        "img":"",
+        "pan":[],
+        "type":[],
+        "price":[15],
+        "ingredientes":[],
+        "Especificaciones":[]
+      }
     ]
 }
