@@ -301,7 +301,16 @@ background: white;
   margin: 0;
   width: 9em;
   text-align: center;
+}
 
+.product-img2 {
+  margin: 0;
+
+  text-align: center;
+}
+
+.product-img2 img{
+  width: 9em;
 }
 .product-img img {
   width: 9em;
@@ -320,6 +329,7 @@ background: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-right: 1em;
 }
 
 .boxText {
@@ -395,12 +405,22 @@ fieldset {
 .mat-icon-clear {
   font-size: 37px;
 }
+.btn-products{
+  /*box-shadow: 0 3px 6px #00000029;*/
+  background: #F7F7F7;
+  font-size: 18px;
+  width: 38%;
+  margin: 0.2em;
+  padding: 0.1em;
+  border: none;
+}
+
 
 
 @media (min-device-width :768px){
 
   .container-hamburguers {
-    width: 37vw;
+    width: 38vw;
     height: 57vh;
   }
 

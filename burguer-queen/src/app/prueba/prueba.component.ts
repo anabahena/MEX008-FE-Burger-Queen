@@ -1,8 +1,8 @@
-import {Component, ViewChild, ElementRef} from '@angular/core';  
+import {Component, ViewChild, ElementRef, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
-//Yael 
-import { ModalTableOrdenComponent } from '../modal-table-orden/modal-table-orden.component'
+//Yael
+import { ModalTableOrdenComponent } from '../modal-table-orden/modal-table-orden.component';
 
 export interface Tile {
   color: string;
@@ -10,6 +10,8 @@ export interface Tile {
   rows: number;
   text: string;
 }
+
+
 
 /**
  * @title Dynamic grid-list
@@ -19,16 +21,17 @@ export interface Tile {
   templateUrl: 'prueba.component.html',
   styleUrls: ['prueba.component.css'],
 })
-export class PruebaComponent {
+export class PruebaComponent  {
+
   tiles: Tile[] = [];
 //silvia
   isActive = true;
   save(e) {
-      console.log('Le diste click al boton 2');
+      return this.isActive;
     }
   //Yael
   constructor(public dialog: MatDialog){}
-    openModal(){
+    openModal() {
       this.dialog.open(ModalTableOrdenComponent);
     }
   }

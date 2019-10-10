@@ -10,9 +10,6 @@ export interface Tile {
   cols: number;
   rows: number;
   text: string;
-
-
-
 }
 
 @Component({
@@ -20,6 +17,7 @@ export interface Tile {
   templateUrl: './state-orden.component.html',
   styleUrls: ['./state-orden.component.css']
 })
+
 export class StateOrdenComponent {
   private orderService: any;
 
