@@ -4,7 +4,7 @@
     font-size: 16px;
 }
 
-.container{
+.container {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -12,13 +12,13 @@
 }
 
 .example-container {
-    margin:0;
-    padding: 0px;
-    width: 60vw;
-    height: 17vh;
-    background: #6C727C;
+  margin: 0;
+  padding: 0;
+  width: 38vw;
+  height: 57vh;
+  background:#6C727C ;
 
-  }
+}
 
   .example-sidenav-content {
     width: 13vw;
@@ -35,7 +35,7 @@
     margin: 0;
     /* border: 1px white solid; */
     background: #F7F7F7;
-    width: 60vw;
+    width: 57vw;
     height: 17vh;
   }
 
@@ -78,7 +78,7 @@ background: white;
     border-radius: 30px;
 }
 
-.list-hamburguer{
+.list-hamburguer {
     padding: 0;
     margin: 0;
     width: 60vw;
@@ -100,13 +100,14 @@ background: white;
     padding: 0;
 }
 
-.container-hamburguers{
-    border: 1px solid white;
+.container-hamburguers {
+    border: none;
     margin:0;
-    padding: 0;
-    width: 60vw;
-    height: 17vh;
-    background: #F7F7F7;
+    padding: 2em 1em 0 1em;
+    border-radius: 0  10px 10px  0;
+    width: 38vw;
+    height: 57vh;
+    background: #f7f7f7;
 }
 
 .button-mat{
@@ -263,6 +264,63 @@ background: white;
     .mat-icon{
       cursor: pointer;
     }
+
+
+    .btn-cancel {
+      border: none;
+      background: #F7F7F7;
+
+    }
+
+    .mat-icon-2 {
+     font-size: 37px;
+      padding-top: 2em;
+    }
+
+  .content-table {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-table img , tr, td {
+    padding: 0 0.7em;
+    margin: 0;
+    text-align: center;
+  }
+
+  .content-table p {
+    margin: 0.5em  0;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Barlow Semi Condensed, Bold Italic, sans-serif;
+
+  }
+
+  .each-product {
+    padding: 0;
+    margin: 0;
+  }
+
+
+.mat-grid-tile .mat-figure {
+  display: block;
+  text-align: center;
+  }
+
+.mat-grid-tile img{
+  width: 10em;
+}
+
+.other-modal {
+  width: 40%;
+  height: 100%;
+  background: #F7F7F7;
+  border-radius: 10px;
+  opacity: 1;
+}
 
     .btn-order {
       border: none;
