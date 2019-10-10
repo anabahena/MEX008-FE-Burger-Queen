@@ -4,24 +4,34 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 
+
 @Injectable({
   providedIn: 'root'
-})
-export class OrdersService {
-  private ordersCollection: AngularFirestoreCollection<any>;
-  orders: Observable<any[]>;
 
-  constructor(private readonly afs: AngularFirestore) {
-    this.ordersCollection = afs.collection<any>('orders');
-    this.orders = this.ordersCollection.snapshotChanges().pipe(map(
-      actions => actions.map(a => {
-        //   Recorriendo documentos de firebase
-        const data = a.payload.doc.data();
-        //    Iteración sobre los documentos
-        const id = a.payload.doc.id;
-        return {id, ...data};
-      })
-    ));
+})
+
+export class OrdersService {
+// guardando el array de todas las órdenes para poder llamarlas en otro componente
+  collectionOrders(){
+    return this.orders;
+  }
+  // Llamando colleción de Firebase
+    private ordersCollection: AngularFirestoreCollection<any>;
+    // Tipo de la collección
+    orders: Observable<any[]>;
+
+  constructor(private readonly afs:AngularFirestore) {
+      this.ordersCollection = afs.collection<any>('orders');
+      // Trayendo el Id de las colecciones
+      this.orders = this.ordersCollection.snapshotChanges().pipe(map(
+          actions => actions.map(a => {
+     //   Recorriendo documentos de firebase
+            const data = a.payload.doc.data();
+    //    Iteración sobre los documentos
+            const id = a.payload.doc.id;
+            return {id, ...data}
+          })
+      ));
   }
 
   myForm = new FormGroup({
@@ -30,8 +40,6 @@ export class OrdersService {
     order: new FormControl(''),
     completed: new FormControl(false)
   });
-
-
   getOrders() {
     return this.orders;
   }
@@ -47,6 +55,8 @@ export class OrdersService {
   createOrders(order: any) {
     return this.ordersCollection.add(order);
   }
+
+
 }
 
 

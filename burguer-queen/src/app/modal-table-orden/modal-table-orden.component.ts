@@ -17,7 +17,7 @@ export interface PeriodicElement {
 export class ModalTableOrdenComponent implements OnInit {
   displayedColumns: string[] = ['orderNumber', 'customerName','actions'];
   dataSource= new MatTableDataSource ();
-  constructor(private orderService: OrdersService) { }
+  constructor(public orderService: OrdersService) { }
   ngOnInit() {
   }
   totalOrder = 0;

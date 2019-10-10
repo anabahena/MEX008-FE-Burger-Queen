@@ -2,7 +2,7 @@ import {MatDialog} from '@angular/material/dialog';
 import {ConfirmDialogComponent} from './confirm-dialog/confirm-dialog.component';
 import { Component } from '@angular/core';
 import { UserService} from '../user.service';
-
+import {OrdersService} from '../shared/orders.service';
 
 
 @Component({
@@ -48,7 +48,7 @@ export class LateralBarComponent {
     this.userService.signOut()
       .then(() => {
         sessionStorage.clear();
-        window.location.host = '';
+
       }).catch((error) => {
       console.log(error);
     });
