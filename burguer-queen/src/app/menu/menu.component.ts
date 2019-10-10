@@ -20,41 +20,11 @@ export interface PeriodicElement {
 export class MenuComponent {
   displayedColumns: string[] = ['orderNumber', 'customerName','actions'];
   dataSource= new MatTableDataSource ();
-  constructor(private orderService: OrdersService){}
+  constructor(private orderService: OrdersService){
+
+  }
   showFiller = false;
   "products" = [
-    {
-      name: "Soberbia",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    },
-    {
-      name: "Malicia",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    },
-    {
-      name: "Gula",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    },
-    {
-      name: "Encarnación",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
-    }
   ];
 
   // Propiedades
