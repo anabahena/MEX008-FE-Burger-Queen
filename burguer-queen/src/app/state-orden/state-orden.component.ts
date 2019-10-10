@@ -10,6 +10,7 @@ export interface Tile {
   cols: number;
   rows: number;
   text: string;
+  totalOrder:number;
 
 
 
@@ -21,9 +22,7 @@ export interface Tile {
   styleUrls: ['./state-orden.component.css']
 })
 export class StateOrdenComponent {
-  private orderService: any;
-
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, public orderService: OrdersService) {}
   openDialog() {
     this.dialog.open(DialogStatusOrdenComponent);
   }

@@ -47,12 +47,13 @@
         </mat-grid-list>
       </mat-drawer>
 
-      <mat-drawer #drawer2  class="product-modal" mode="side" fxLayout="column" fxLayoutAlign="start center"  >
+      <mat-drawer #drawer2  class="product-modal" mode="side" fxLayout="column" fxLayoutAlign="start center">
         <div class="boxText" *ngFor="let product of products">
           <div class="title-product">
             <p class="nameProduct" >{{product.name}}</p>
             <figure class="product-img"><img src="{{product.img}}" alt="{{product.name}}" ></figure>
           </div>
+
 
           <fieldset>
             <label>
@@ -82,7 +83,7 @@
           </fieldset>
           <p>Especificaciones: <input class="especifics" type="text"></p>
           <div class="contend-btn">
-            <button class="save-btn" (click)="onAddProduct(product)">
+            <button class="save-btn" (click)="onAddProduct(product); close()">
               Guardar
             </button>
             <button class="cancel-btn" >
@@ -165,50 +166,3 @@
   </div>
 </div>
 
-
-<!-- Especificaciones de producto -->
-
-
-<!-- <div fxLayout="column" fxLayoutAlign="start center"> -->
-<!-- <fieldset>
-    <label>
-      <input type="radio" name="size" value="50">Individual ($50)
-    </label>
-    <label>
-      <input type="radio" name="combo" value="65">
-    </label> En combo ($65)
-  </fieldset> -->
-<!-- </div> -->
-
-<!-- <div fxLayout="column" fxLayoutAlign="start center"> -->
-<!-- <fieldset>
-    <legend>Pan:</legend>
-    <label>
-      <input type="radio" name="pan" value="pan">
-    </label>Masa madre
-    <label>
-      <input type="radio" name="ingredients" value="ingredients">
-    </label> Tradicional
-  </fieldset> -->
-<!-- </div> -->
-
-<!-- <div fxLayout="column" fxLayoutAlign="start center"> -->
-<!-- <fieldset>
-    <legend>Ingredientes:</legend>
-    <label>
-      <input type="radio" name="pan" value="pan">
-    </label>Masa madre
-    <label>
-      <input type="radio" name="ingredients" value="ingredients">
-    </label> Tradicional
-  </fieldset>
-  <p>Especificaciones: <input class="especifics" type="text"></p> -->
-<!-- </div> -->
-
-
-
-
-<!-- </div> -->
-
-<!-- </div> -->
-<!-- </div> -->
