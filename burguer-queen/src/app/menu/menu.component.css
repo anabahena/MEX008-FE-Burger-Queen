@@ -20,8 +20,6 @@
 
 }
 
-
-
   .example-sidenav-content {
     width: 13vw;
     height: 100vh;
@@ -267,6 +265,7 @@ background: white;
       cursor: pointer;
     }
 
+
     .btn-cancel {
       border: none;
       background: #F7F7F7;
@@ -322,3 +321,13 @@ background: white;
   border-radius: 10px;
   opacity: 1;
 }
+
+    .btn-order {
+      border: none;
+      background: #F7F7F7;
+    }
+
+    .mat-icon-clear {
+      font-size: 37px;
+    }
+
