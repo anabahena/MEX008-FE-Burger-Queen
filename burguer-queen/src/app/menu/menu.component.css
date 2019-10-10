@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   width: 38vw;
-  height: 57vh;
+  height: 69vh;
   background:#6C727C ;
 
 }
@@ -42,7 +42,7 @@
 .container2{
     margin:0;
     padding: 0;
-    width: 65vw;
+    width: 61vw;
     height: 100vh;
     background: #6C727C;
 }
@@ -103,10 +103,11 @@ background: white;
 .container-hamburguers {
     border: none;
     margin:0;
-    padding: 2em 1em 0 1em;
+    padding: 0;
+    /*padding: 2em 1em 0 1em;*/
     border-radius: 0  10px 10px  0;
-    width: 38vw;
-    height: 57vh;
+    width: 32vw;
+    height: 69vh;
     background: #f7f7f7;
 }
 
@@ -278,49 +279,123 @@ background: white;
       padding-top: 2em;
     }
 
-  .content-table {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-  }
 
-  .content-table img , tr, td {
-    padding: 0 0.7em;
-    margin: 0;
-    text-align: center;
-  }
+.content-table {
+  margin: 0;
+  padding: 0;
+}
 
-  .content-table p {
+
+.content-table p {
     margin: 0.5em  0;
+    padding: 0;
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
     font-family: Barlow Semi Condensed, Bold Italic, sans-serif;
 
-  }
 
-  .each-product {
-    padding: 0;
-    margin: 0;
   }
 
 
-.mat-grid-tile .mat-figure {
-  display: block;
+.product-img {
+  margin: 0;
+  width: 9em;
   text-align: center;
-  }
-
-.mat-grid-tile img{
-  width: 10em;
 }
 
-.other-modal {
-  width: 40%;
-  height: 100%;
+
+
+
+/*modal para hamburguesa*/
+
+.product-modal {
+  width: 38vw!important;
+  height: 69vh!important;
   background: #F7F7F7;
-  border-radius: 10px;
+  border-radius: 0  10px 10px  0!important;
   opacity: 1;
+}
+.title-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxText {
+  padding: 2em 3em;
+}
+
+.nameProduct {
+  text-align: left;
+  font-family:Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #000000;
+  background: #F7F7F7
+}
+
+.contend-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.save-btn {
+  margin: 2em 0;
+  width: 90px;
+  height: 37px;
+  background: #F7F7F7 ;
+  border:  #F7F7F7 solid 1px;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 24px;
+  text-align: center;
+  font-family:  Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+.cancel-btn {
+  margin: 2em 2em 2em 1em;
+  width: 90px;
+  height: 37px;
+  background: #F7F7F7 ;
+  border:  #F7F7F7 solid 1px;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 24px;
+  text-align: center;
+  font-family:  Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+button:hover{
+  background-color: #FFE867;
+}
+
+fieldset {
+  border: none
+}
+
+.especifics {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: black solid 1px;
+  background: #F7F7F7;
+  color: black;
+}
+
+
+
+@media (min-device-width :768px){
+
+  .container-hamburguers {
+    width: 37vw;
+    height: 57vh;
+  }
+
 }
 
     .btn-order {
