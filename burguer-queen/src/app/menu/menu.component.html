@@ -46,12 +46,13 @@
         </mat-grid-list>
       </mat-drawer>
 
-      <mat-drawer #drawer2  class="product-modal" mode="side" fxLayout="column" fxLayoutAlign="start center"  >
+      <mat-drawer #drawer2  class="product-modal" mode="side" fxLayout="column" fxLayoutAlign="start center">
         <div class="boxText" *ngFor="let product of products">
           <div class="title-product">
             <p class="nameProduct" >{{product.name}}</p>
             <figure class="product-img"><img src="{{product.img}}" alt="{{product.name}}" ></figure>
           </div>
+
 
           <fieldset>
             <label>

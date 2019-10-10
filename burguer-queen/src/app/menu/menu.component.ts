@@ -27,8 +27,7 @@ export class MenuComponent {
 
   }
   showFiller = false;
-  "products" = [
-  ];
+  "products" = [];
   // openDialog(){
   //   this.dialog.open(ModalHamburgerSoberbiaComponent);
   // };
@@ -108,6 +107,15 @@ export class MenuComponent {
     console.log("VALUE:", value)
     console.log(data.default[value]);
     this.products = data.default[value];
+    // this.product.name;
     //console.log(this.products);
   }
+
+  // prueba2(value){
+  //   console.log("VALUE:", value)
+  //   console.log(data.default[value.name]);
+  //   this.products = data.default[value.name];
+  //   // this.product.name;
+  //   console.log(this.products);
+  // }
 }
