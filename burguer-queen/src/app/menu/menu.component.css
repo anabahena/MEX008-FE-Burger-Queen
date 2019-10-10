@@ -304,12 +304,87 @@ background: white;
   text-align: center;
 }
 
-.other-modal {
-  width: 40%;
-  height: 100%;
+
+
+
+/*modal para hamburguesa*/
+
+.product-modal {
+  width: 38vw!important;
+  height: 69vh!important;
   background: #F7F7F7;
-  border-radius: 10px;
+  border-radius: 0  10px 10px  0!important;
   opacity: 1;
+}
+.title-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxText {
+  padding: 2em 3em;
+}
+
+.nameProduct {
+  text-align: left;
+  font-family:Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #000000;
+  background: #F7F7F7
+}
+
+.contend-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.save-btn {
+  margin: 2em 0;
+  width: 90px;
+  height: 37px;
+  background: #F7F7F7 ;
+  border:  #F7F7F7 solid 1px;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 24px;
+  text-align: center;
+  font-family:  Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+.cancel-btn {
+  margin: 2em 2em 2em 1em;
+  width: 90px;
+  height: 37px;
+  background: #F7F7F7 ;
+  border:  #F7F7F7 solid 1px;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 24px;
+  text-align: center;
+  font-family:  Barlow Semi Condensed, Bold Italic, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+button:hover{
+  background-color: #FFE867;
+}
+
+fieldset {
+  border: none
+}
+
+.especifics {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: black solid 1px;
+  background: #F7F7F7;
+  color: black;
 }
 
 
