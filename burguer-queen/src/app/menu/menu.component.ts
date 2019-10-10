@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, OnInit} from '@angular/core';
 import {OrdersService} from '../shared/orders.service';
 import { MatTableDataSource, MatSort } from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
@@ -19,11 +19,12 @@ export interface PeriodicElement {
   templateUrl: 'menu.component.html',
   styleUrls: ['menu.component.css'],
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit{
   displayedColumns: string[] = ['orderNumber', 'customerName', 'actions'];
   dataSource = new MatTableDataSource ();
   constructor(private orderService: OrdersService) {}
   showFiller = false;
+
   'products' = [
     {
       name: 'Soberbia',
@@ -64,13 +65,7 @@ export class MenuComponent {
     }
   ];
 
-  displayedColumns: string[] = ['orderNumber', 'customerName','actions'];
-  dataSource= new MatTableDataSource ();
-  constructor(private orderService: OrdersService, public dialog: MatDialog){
 
-
-  }
-  showFiller = false;
   "products" = [];
 
   // openDialog(){
@@ -163,5 +158,3 @@ export class MenuComponent {
   //   // this.product.name;
   //   console.log(this.products);
   // }
-
-}
