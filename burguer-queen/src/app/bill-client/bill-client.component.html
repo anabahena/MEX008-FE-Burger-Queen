@@ -7,13 +7,14 @@
 
 <div  fxLayout = "row"  fxLayoutAlign = "center center" class="">
   <mat-grid-list cols="3" rowHeight="100px" class="container-bill">
-    <mat-grid-tile [colspan]=3 [rowspan]=1 class="tile" id="place">  
+
+    <mat-grid-tile [colspan]=3 [rowspan]=1 class="tile" id="place">
       <div fxLayout="row"  class="options" fxLayoutAlign="space-around">
         <div >Mesa 1</div>
-        <div>Precio</div>  
+        <div>Precio</div>
       </div>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]=2 [rowspan]=4  class="tile"> 
+    <mat-grid-tile [colspan]=2 [rowspan]=4  class="tile">
       <div fxLayout="column"  fxLayoutGap="20px" class="options">
         <mat-radio-group  class="radio-group">
           <mat-radio-button class="radio-button" [value]="pay" *ngFor="let pay of pays" >
@@ -24,18 +25,20 @@
           <mat-radio-button class="radio-button"  [value]="percentage" *ngFor="let percentage of percentages">
             {{percentage}}
           </mat-radio-button>
-        </mat-radio-group> 
-      </div> 
+        </mat-radio-group>
+      </div>
     </mat-grid-tile>
-      <mat-grid-tile [colspan]=1 [rowspan]=4 class="tile"> 
+      <mat-grid-tile [colspan]=1 [rowspan]=4 class="tile">
         <div  fxLayout = "column" fxLayoutGap="20px">
           <button mat-raised-button (click)="openDialog()" >EFECTIVO</button>
-          <button mat-raised-button routerLinkActive="active"   routerLink="/">TARJETA</button> 
-        
-      </div>            
-     </mat-grid-tile>    
+          <button mat-raised-button routerLinkActive="active"   routerLink="/">TARJETA</button>
+      </div>
+     </mat-grid-tile>
+    <mat-grid-tile>
+     <mat-icon class="mat-icon-2" [routerLink]="['/']" routerLinkActive="router-link-active">cancel</mat-icon>
+    </mat-grid-tile>
   </mat-grid-list>
 
 <ng-content ></ng-content>
 
-</div> 
+</div>
