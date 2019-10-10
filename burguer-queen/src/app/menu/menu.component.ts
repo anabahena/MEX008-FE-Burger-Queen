@@ -1,8 +1,10 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, OnInit} from '@angular/core';
 import {OrdersService} from '../shared/orders.service';
 import { MatTableDataSource, MatSort } from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
 import * as data from './data.json';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalHamburgerSoberbiaComponent } from '../modal-hamburger-soberbia/modal-hamburger-soberbia.component';
 /**
  * @title Autosize sidenav
  */
@@ -17,11 +19,12 @@ export interface PeriodicElement {
   templateUrl: 'menu.component.html',
   styleUrls: ['menu.component.css'],
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit{
   displayedColumns: string[] = ['orderNumber', 'customerName', 'actions'];
   dataSource = new MatTableDataSource ();
   constructor(private orderService: OrdersService) {}
   showFiller = false;
+
   'products' = [
     {
       name: 'Soberbia',
@@ -61,6 +64,13 @@ export class MenuComponent {
 
     }
   ];
+
+
+  "products" = [];
+
+  // openDialog(){
+  //   this.dialog.open(ModalHamburgerSoberbiaComponent);
+  // };
 
   // Propiedades
   totalOrder = 0;
@@ -136,4 +146,15 @@ export class MenuComponent {
     this.products = data.default[value];
     // console.log(this.products);
   }
-}
+
+    // this.product.name;
+    //console.log(this.products);
+  }
+
+  // prueba2(value){
+  //   console.log("VALUE:", value)
+  //   console.log(data.default[value.name]);
+  //   this.products = data.default[value.name];
+  //   // this.product.name;
+  //   console.log(this.products);
+  // }

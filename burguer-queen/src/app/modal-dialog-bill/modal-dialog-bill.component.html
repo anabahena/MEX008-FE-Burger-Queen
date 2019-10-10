@@ -3,24 +3,30 @@
   <h1 mat-dialog-title>EFECTIVO</h1>
   <ul>
     <li>
-     Total por pagar :  <p></p>
+     Total por pagar :  <span>${{totalOrder}}</span>
     </li>
     <li>
-     Total con propina (10%): <p></p>
+     Total con propina (10%): <span>${{totalOrder*1.10 | number}}</span>
     </li>
-    <li>
-     Paga con:  <p></p>
-    </li>
-    <li>
-      Cambio:  <p></p>
-    </li>
+    <!-- <li>
+    <form [formGroup]="this.orderService.myForm2" (ngSubmit)="onSubmit()" class="modalOrden2">
+    <mat-form-field>
+     Paga con:  <input matInput placeholder="Input" #pagaCon maxlength="3" placeholder="Order Numbrer" formControlName="pagaCon">
+     <button (click)="cambio()">Calcular</button>
+     {{pagaCon}}
+    </mat-form-field>
+    </form>
+    </li> -->
+    <!-- <li>
+      Total:  <span>{{(totalOrder*1.10 | number)}}</span>
+    </li> -->
   </ul>
 
 <br>
 <br>  
 <div  fxLayout = "row"   fxLayoutAlign="space-around" class="">
   <button mat-raised-button class="btn-cancel" > Cancelar</button>
-  <button mat-raised-button class="btn-pay">Pagar</button>
+  <button mat-raised-button class="btn-pay" routerLinkActive="active"   routerLink="/">Pagar</button>
 </div>  
 <br>
 
