@@ -303,7 +303,9 @@ background: white;
   text-align: center;
 
 }
-
+.product-img img {
+  width: 9em;
+}
 /*modal para hamburguesa*/
 
 .product-modal {
