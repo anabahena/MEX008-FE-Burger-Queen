@@ -24,8 +24,7 @@ export class MenuComponent {
 
   }
   showFiller = false;
-  "products" = [
-  ];
+  "products" = [];
 
   // Propiedades
   totalOrder = 0;
