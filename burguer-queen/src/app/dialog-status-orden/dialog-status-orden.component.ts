@@ -1,29 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import {OrdersService} from '../shared/orders.service';
+import { Observable, from} from 'rxjs';
 
 @Component({
   selector: 'app-dialog-status-orden',
   templateUrl: './dialog-status-orden.component.html',
   styleUrls: ['./dialog-status-orden.component.css']
 })
-export class DialogStatusOrdenComponent{
 
-  constructor(private orderService: OrdersService) { }
+
+
+export class DialogStatusOrdenComponent implements OnInit{
+
+  public product: number;
+  public order: any;
+
+
+  constructor(public orderService: OrdersService) {}
 
   ngOnInit() {
+    this.order()
+    
   }
 
-  totalOrder = 0;
-  tempOrder = []; 
-  OrdersService: any;
-
-  onAddProduct(product){
-    console.log(product);
-    // suma de todos los precios
-    this.totalOrder = (this.totalOrder + product.price[0]);
-    console.log(this.totalOrder )
-    // Impresión de precio y producto en comanda
-    // this.tempOrder.push(product.name + " " + "$"+ product.price[0])
+  public perrito(){
+    this.order = (this.orderService.getOrders());
   }
 
 }
+

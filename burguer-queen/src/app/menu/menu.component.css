@@ -17,9 +17,9 @@
     width: 60vw;
     height: 17vh;
     background: #6C727C;
-    
+
   }
-  
+
   .example-sidenav-content {
     width: 13vw;
     height: 100vh;
@@ -29,7 +29,7 @@
     /* border-radius: 0 70px 70px 0; */
     background: #F7F7F7;
   }
-  
+
   .example-sidenav {
     padding: 0;
     margin: 0;
@@ -109,7 +109,7 @@ background: white;
     background: #F7F7F7;
 }
 
-.button-mat{ 
+.button-mat{
     padding: 0;
     margin: 0;
     background: #F7F7F7;
@@ -140,7 +140,7 @@ background: white;
     padding: 0;
     margin: 0;
   }
-  
+
   .container2-order{
     border: #F7F7F7  solid 1px;
     border-radius: 20px 0 0 30px;
@@ -150,25 +150,25 @@ background: white;
     width: 25vw;
     height: 100vh;
   }
-  
+
   .main p{
     font-size:25px;
     font-weight: bold;
     margin: 10px;
     padding: 0;
   }
-  
+
   .mdl-button--fab{
     padding: 0;
     margin: 0;
     border-radius: 50px;
   }
-  
+
   .name-order p{
     margin: 0;
     padding: 0;
   }
-  
+
   .person-order p{
     margin: 0;
     padding: 0;
@@ -177,7 +177,7 @@ background: white;
     background: #FFE867;
     opacity: .29;
   }
-  
+
   .person-order2 p{
     margin: 0;
     padding: 0;
@@ -186,18 +186,18 @@ background: white;
     background: #FFE867;
     opacity: .29;
   }
-  
+
   .name-order{
     width: 20vw;
     height: 10vh;
   }
-  
+
   .person-order{
     width: 20vw;
     height: 30vh;
     background: white;
   }
-  
+
   .section-person{
     width: 25vw;
     height: 10vh;
@@ -205,7 +205,7 @@ background: white;
     opacity: 0.29;
   }
 
-  
+
   .main{
     height: 10vh;
     width: 25vh;
@@ -262,5 +262,14 @@ background: white;
 
     .mat-icon{
       cursor: pointer;
+    }
+
+    .btn-order {
+      border: none;
+      background: #F7F7F7;
+    }
+
+    .mat-icon-clear {
+      font-size: 37px;
     }
 

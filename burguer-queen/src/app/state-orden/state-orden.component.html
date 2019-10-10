@@ -2,27 +2,30 @@
 
 </mat-grid-list>
 
-<div class= "container-button" fxLayout= "row" fxLayoutAlign = "flex-start">
+<div fxLayout="column" class="col-orders" fxLayoutAlign="center center">
+  <div class= "container-button" fxLayout= "row" fxLayoutAlign = "flex-start">
     <button  mat-stroked-button
-            (click)="openDialog()"
-            class="btn-state-orden"
-            matBadge = "3"
-            matBadgePosition="before"
+             (click)="openDialog()"
+             class="btn-state-orden"
+             matBadge = "3"
+             matBadgePosition="before"
              matBadgeSize="large"
-            matBadgeColor="accent"
-            >ORDENES ABIERTAS</button>
+             matBadgeColor="accent"
+    >ORDENES ABIERTAS</button>
 
     <!-- <button  mat-stroked-button
             (click)="openDialog()"
             class="btn-state-orden"
     >$</button> -->
-</div>
+  </div>
 
 
-<div fxLayout= "row" fxLayoutAlign = "center center">
-  <button  mat-stroked-button
-           [routerLink]="['/bill']"
-           routerLinkActive="router-link-active"
-           class="btn-pay-orden"
-  >$</button>
+  <div fxLayout= "row" fxLayoutAlign = "center center">
+    <button  mat-stroked-button
+             [routerLink]="['/bill']"
+             routerLinkActive="router-link-active"
+             class="btn-pay-orden"
+    >$</button>
+  </div>
 </div>
+

@@ -4,16 +4,16 @@
 }
 
 .example-sidenav {
-    padding-top: 92px;
-    height: 100%;
-    width: 13vw;
-    background: white;
-    border-radius: 0 33px 33px 0;
+  padding-top: 16vh;
+  height: 100vh;
+  width: 13rem;
+  background: #F7F7F7;
+  border-radius: 0 68px 68px 0;
   }
 
  .mat-sidenav-container {
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     background: #F0F0F0;
     color: black;
   }
@@ -35,9 +35,13 @@
     background: transparent;
     margin: 0;
     padding:0;
-    font-size: 18px;
     writing-mode: vertical-lr;
-    transform: rotate(270deg);
+    font-size: 1em ;
+    font-weight: bold;
+    -webkit-transform: rotate(270deg);
+    -moz-transform:    rotate(180deg);
+    -ms-transform:     rotate(270deg);
+    -o-transform:      rotate(270deg)
   }
 
 
@@ -45,28 +49,30 @@
     text-decoration: none;
     list-style: none;
     color: black;
-    font-size: 18px;
+    font-size: 1.3em;
   }
 
   .mat-sidenav-container .list-administrator ul li a:hover{
     background: #FFE867;
-    border-radius: 5px;
+    border-radius: .5em;
   }
 
   .mat-sidenav-container .list-administrator ul li {
-         list-style: none;
-         padding-bottom: 10px;
-       }
-
-
+    list-style: none;
+    padding-bottom: 1.2em;
+    font-family: Barlow Semi Condensed, sans-serif;
+    font-size: 1.15em;
+    color: black;
+    font-weight: bold;
+  }
 
 .mat-sidenav-container .list-administrator ul{
   padding: 0;
 }
 
   .mat-sidenav-container div .administrator {
-    font-size: 20px;
-    /*font-weight: 2000px;*/
+    font-size: 1.3em;
+    display: flex;
   }
 
 
@@ -91,27 +97,29 @@ div .mdl-button--raised{
 }
 
 div .rectangule{
-    height: 80px;
-    width: 100px;
+    height: 5em;
+    width: 6.25em;
 }
 
 .mat-sidenav-container .example-sidenav-content .button-administrator{
   border:2px solid white;
   border-radius: 0 70px 70px 0;
-  width: 8vw;
+  width: 6.67vw;;
   height: 100vh;
   background: white;
-
+  box-shadow: 0px 3px 3px #00000029;
 }
 
-.button-administrator{
-  background: white;
-  font-size: 20px;
+.button-administrator {
+  background: #F7F7F7;
+  font-size: 1.45em;
   font-weight: bold;
 }
 
 
 .bar-administrator img {
-  padding-bottom: 21px;
+  padding-bottom: 2.68em;
+  width: 32.2%;
 
 }
+

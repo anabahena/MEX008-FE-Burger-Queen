@@ -1,13 +1,16 @@
 .app-header{
-    background: #FFE867;
-    margin:0;
-    padding: 0;
-    font-family: Barlow Semi Condensed, Bold Italic;
-    border-radius: 33px;
-    height: 6vh;
-    text-align: center;
-    width: 15vw;
-    font-weight: bold;
+  background: #FFE867;
+  margin: 0;
+  padding: 0;
+  font-family: Barlow Semi Condensed, Bold Italic, sans-serif;
+  border-radius: 33px;
+  height: 56%;
+  text-align: center;
+  width: 22%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header{
@@ -24,6 +27,19 @@
     height: 2vh; */
 }
 
+.header img {
+  vertical-align: middle;
+  width: 6vw;
+  padding-right: 1em;
+}
 
+.app-header h4 {
+  font-size: 2em;
+  line-height: 32px;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  font-family: Barlow Semi Condensed, Bold Italic, sans-serif;
+}
 
 

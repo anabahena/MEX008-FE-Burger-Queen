@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {OrdersService} from '../shared/orders.service';
 import { MatTableDataSource, MatSort } from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
+import * as data from './data.json';
 /**
  * @title Autosize sidenav
  */
@@ -55,15 +56,27 @@ export class MenuComponent {
       Especificaciones:[]
     }
   ];
+
+  // Propiedades
   totalOrder = 0;
   // Array temporal
   tempOrder = [];
   OrdersService: any;
+
+
+
   @ViewChild(MatSort,{static: false}) sort: MatSort;
+
+
   ngOnInit(){
     //  llamando todas las órdenes
+    let data2 = this.orderService.myForm.value.completed;
     this.getAllOrders();
+    console.log(this.onChangeStatus(data2));
   }
+
+
+
   onAddProduct(product){
     console.log(product);
     // suma de todos los precios
@@ -81,6 +94,7 @@ export class MenuComponent {
     // Agregando al array temporal el # de orden y el cliente
     this.orderService.myForm.value.order = this.tempOrder;
     let data = this.orderService.myForm.value;
+    // let state = this.orderService.myForm.value;
     // console.log(data);
     data.totalOrder = this.totalOrder;
     // llamada al servicio
@@ -89,6 +103,7 @@ export class MenuComponent {
     this.tempOrder = [];
     // Reinicializando a 0 el total de la orden
     this.totalOrder=0;
+    this.onChangeStatus(data);
     // Reinicializando el formulario
     this.orderService.myForm.reset();
   }
@@ -104,7 +119,20 @@ export class MenuComponent {
     this.orderService.deleteOrders(id);
   }
   onChangeStatus(order: any){
+    console.log(order);
+    
     order.completed = true;
     this.orderService.updateOrders(order);
+    // console.log(this.orderService.updateOrders(order));
+    
+    console.log(order.completed);
+    
+  }
+
+  prueba(value){
+    console.log("VALUE:", value)
+    console.log(data.default[value]);
+    this.products = data.default[value]
+    //console.log(this.products);
   }
 }

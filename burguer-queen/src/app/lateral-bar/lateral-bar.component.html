@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700&display=swap" rel="stylesheet">
 
 <mat-sidenav-container class="example-container" autosize>
   <mat-sidenav #sidenav  class="example-sidenav" [mode]="mode" opened="{{this.estaLogeado()}}" fxLayout = "column"  fxLayoutAlign = "space-around start">
@@ -16,18 +17,17 @@
         <li><a href="">Calendario</a></li>
         <li><a href="">Menú</a></li>
         <li><a href="">Staff</a></li>
-        <li><a href=""  type="button" (click)="logout()" >Cerrar Sesión</a></li>
+        <li><a  type="button" (click)="logout()" ><u><em>Cerrar Sesión</em></u></a></li>
       </ul>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
 
     <!-- Efecto de deslizamiento sidenav -->
-    <div class="example-sidenav-content" fxLayout = "row"  fxLayoutAlign = " center start">
-      <div class="button-administrator" fxLayout = "row"  fxLayoutAlign = "start center">
-        <div class= "container-button" fxLayout= "column" fxLayoutAlign = "flex-start">
-          <button mat-button  (click)="this.estaLogeado() === false ? openDialog() : sidenav.toggle() "
-                  class="btn-state-orden">
+    <div class="example-sidenav-content"  fxLayout = "row"  fxLayoutAlign ="center">
+      <div class="button-administrator" fxLayout = "row"  fxLayoutAlign = "center">
+        <div class= "container-button" fxLayout= "column" fxLayoutAlign = "center">
+          <button type="button"  (click)="this.estaLogeado() === false ? openDialog() : sidenav.toggle() " >
             ADMINISTRADOR
           </button>
         </div>
