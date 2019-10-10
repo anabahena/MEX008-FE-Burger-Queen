@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   width: 38vw;
-  height: 57vh;
+  height: 69vh;
   background:#6C727C ;
 
 }
@@ -44,7 +44,7 @@
 .container2{
     margin:0;
     padding: 0;
-    width: 65vw;
+    width: 61vw;
     height: 100vh;
     background: #6C727C;
 }
@@ -105,10 +105,11 @@ background: white;
 .container-hamburguers {
     border: none;
     margin:0;
+    padding: 0;
     /*padding: 2em 1em 0 1em;*/
     border-radius: 0  10px 10px  0;
     width: 32vw;
-    height: 50vh;
+    height: 69vh;
     background: #f7f7f7;
 }
 
@@ -279,46 +280,28 @@ background: white;
     }
 
 
+.content-table {
+  margin: 0;
+  padding: 0;
+}
 
 
 .content-table p {
     margin: 0.5em  0;
+    padding: 0;
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
     font-family: Barlow Semi Condensed, Bold Italic, sans-serif;
 
+
   }
 
-.content-table {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
+
+.product-img {
   margin: 0;
-  height: 50%;
-  width: 50%;
-}
-
-  .each-product {
-    padding: 0;
-    margin: 0;
-    height: 50%;
-    width: 50%;
-  }
-
-
-.mat-grid-tile .mat-figure {
-  display: block;
+  width: 9em;
   text-align: center;
-  width: 50%;
-  height: 50%;
-  padding: 0;
-  margin: 0;
-
-  }
-
-.mat-grid-tile img{
-  width: 7em;
 }
 
 .other-modal {
@@ -329,3 +312,13 @@ background: white;
   opacity: 1;
 }
 
+
+
+@media (min-device-width :768px){
+
+  .container-hamburguers {
+    width: 37vw;
+    height: 57vh;
+  }
+
+}

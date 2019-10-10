@@ -26,7 +26,7 @@ export class MenuComponent {
   'products' = [
     {
       name: 'Soberbia',
-      img: '../assets/soberbia.png',
+      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/soberbia.png?raw=true',
       pan: ['Masa Madre', 'Tradicional'],
       type: ['Individual', 'Combo'],
       price: [50, 65],
@@ -35,7 +35,7 @@ export class MenuComponent {
     },
     {
       name: 'Malicia',
-      img: '../assets/malicia.png',
+      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/malicia.png?raw=true',
       pan: ['Masa Madre', 'Tradicional'],
       type: ['Individual', 'Combo'],
       price: [50, 65],
@@ -44,7 +44,7 @@ export class MenuComponent {
     },
     {
       name: 'Encarnación',
-      img: '../assets/encarnacion.png',
+      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/encarnacion.png?raw=true',
       pan: ['Masa Madre', 'Tradicional'],
       type: ['Individual', 'Combo'],
       price: [50, 65],
@@ -53,7 +53,7 @@ export class MenuComponent {
     },
     {
       name: 'Gula',
-      img: ' ../assets/gula.png',
+      img: 'https://github.com/anabahena/MEX008-FE-Burger-Queen/blob/master/burguer-queen/src/assets/gula.png?raw=true',
       pan: ['Masa Madre', 'Tradicional'],
       type: ['Individual', 'Combo'],
       price: [50, 65],

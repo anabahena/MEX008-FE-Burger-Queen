@@ -37,9 +37,9 @@
   <div class="container2" fxLayout="column" fxLayoutAlign="center start">
     <mat-drawer-container class="example-container" autosize fxLayout="row" fxLayoutAlign="start center">
       <mat-drawer #drawer  class="container-hamburguers" mode="side" fxLayout="column" fxLayoutAlign="start center">
-        <mat-grid-list cols="2"  class="content-table">
-          <mat-grid-tile class="each-product" *ngFor="let product of products" (click)="onAddProduct(product)">
-            <figure class="mat-figure"><img src="{{product.img}}" alt="{{product.name}}" ><p>{{product.name}}</p></figure>
+        <mat-grid-list  cols="2"  class="content-table" >
+          <mat-grid-tile class="content-table" *ngFor="let product of products" (click)="onAddProduct(product)">
+            <figure class="product-img"><img src="{{product.img}}" alt="{{product.name}}" ><p>{{product.name}}</p></figure>
           </mat-grid-tile>
         </mat-grid-list>
       </mat-drawer>
