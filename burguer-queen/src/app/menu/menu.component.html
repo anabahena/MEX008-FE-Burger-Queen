@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700&display=swap" rel="stylesheet">
 
 <div class="container" fxLayout="row" fxLayoutAlign="start">
   <div class="example-sidenav-content" fxLayout="column" fxLayoutAlign="center center">
@@ -11,7 +12,7 @@
         <button type="button" mat-button (click)="drawer.toggle()" class="button-mat">
           Hamburguesas
         </button>
-        <button type="button" mat-button (click)="drawer.toggle()" class="button-mat">
+        <button type="button" mat-button (click)="drawer2.toggle()" class="button-mat">
           Pizza
         </button>
         <button type="button" mat-button (click)="drawer.toggle()" class="button-mat">
@@ -35,27 +36,55 @@
 
   <div class="container2" fxLayout="column" fxLayoutAlign="center start">
     <mat-drawer-container class="example-container" autosize fxLayout="row" fxLayoutAlign="start center">
-      <mat-drawer #drawer class="example-sidenav" mode="side" fxLayout="column" fxLayoutAlign="start center">
-        <div class="container-hamburguers">
-          <div fxLayout="row" fxLayoutAlign="space-evenly start" class="list-hamburguer">
-            <button class="nameProduct" *ngFor="let product of products" (click)="onAddProduct(product)">
-              {{product.name}}
-            </button>
-          </div>
-<!--          <table>-->
-<!--            <tr>-->
-<!--              <td><img src="./assets/malicia.png" alt="malicia"></td>-->
-<!--              <td><img src="./assets/gula.png" alt="gula"></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--              <td><img src="./assets/encarnacion.png" alt="encarnacion"></td>-->
-<!--              <td><img src="./assets/soberbia.png" alt="soberbia"></td>-->
-<!--            </tr>-->
-<!--          </table>-->
-        </div>
-
+      <mat-drawer #drawer  class="container-hamburguers" mode="side" fxLayout="column" fxLayoutAlign="start center">
+        <mat-grid-list cols="2" rowHeight="2:2" class="content-table">
+          <mat-grid-tile class="each-product" *ngFor="let product of products" (click)="onAddProduct(product)">
+            <figure class="mat-figure"><img src="{{product.img}}" alt="{{product.name}}" ><p>{{product.name}}</p></figure>
+          </mat-grid-tile>
+        </mat-grid-list>
       </mat-drawer>
 
+      <mat-drawer #drawer2  class="other-modal" mode="side" fxLayout="column" fxLayoutAlign="start center">
+        <div class="boxText">
+          <p class="nameProduct">Malicia</p>
+          <fieldset>
+            <label>
+              <input type="radio" name="size" value="50">Individual ($50)
+            </label>
+            <label>
+              <input type="radio" name="combo" value="65">
+            </label> En combo ($65)
+          </fieldset>
+          <fieldset>
+            <legend>Pan:</legend>
+            <label>
+              <input type="radio" name="pan" value="pan">
+            </label>Masa madre
+            <label>
+              <input type="radio" name="ingredients" value="ingredients">
+            </label> Tradicional
+          </fieldset>
+          <fieldset>
+            <legend>Ingredientes:</legend>
+            <label>
+              <input type="radio" name="pan" value="pan">
+            </label>Masa madre
+            <label>
+              <input type="radio" name="ingredients" value="ingredients">
+            </label> Tradicional
+          </fieldset>
+          <p>Especificaciones: <input class="especifics" type="text"></p>
+
+        </div>
+        <div class="contend-btn">
+          <button class="save-btn" (click)="onSubmit()">
+            Guardar
+          </button>
+          <button class="cancel-btn" >
+            Cancelar
+          </button>
+        </div>
+      </mat-drawer>
     </mat-drawer-container>
   </div>
 

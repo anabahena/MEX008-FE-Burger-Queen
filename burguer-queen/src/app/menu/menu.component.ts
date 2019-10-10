@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {OrdersService} from '../shared/orders.service';
 import { MatTableDataSource, MatSort } from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
+
 /**
  * @title Autosize sidenav
  */
@@ -22,66 +23,71 @@ export class MenuComponent {
   private order: any;
     constructor(private orderService: OrdersService) {}
   showFiller = false;
-  "products" = [
+  'products' = [
     {
-      name: "Soberbia",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
+      name: 'Soberbia',
+      img: '../assets/soberbia.png',
+      pan: ['Masa Madre', 'Tradicional'],
+      type: ['Individual', 'Combo'],
+      price: [50, 65],
+      ingredientes: ['Con todo', 'Sin'],
+      Especificaciones: []
     },
     {
-      name: "Malicia",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
+      name: 'Malicia',
+      img: '../assets/malicia.png',
+      pan: ['Masa Madre', 'Tradicional'],
+      type: ['Individual', 'Combo'],
+      price: [50, 65],
+      ingredientes: ['Con todo', 'Sin'],
+      Especificaciones: []
     },
     {
-      name: "Gula",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
+      name: 'Encarnación',
+      img: '../assets/encarnacion.png',
+      pan: ['Masa Madre', 'Tradicional'],
+      type: ['Individual', 'Combo'],
+      price: [50, 65],
+      ingredientes: ['Con todo', 'Sin'],
+      Especificaciones: []
     },
     {
-      name: "Encarnación",
-      pan:["Masa Madre", "Tradicional"],
-      type:["Individual","Combo"],
-      price:[50, 65],
-      ingredientes:["Con todo", "Sin"],
-      Especificaciones:[]
+      name: 'Gula',
+      img: ' ../assets/gula.png',
+      pan: ['Masa Madre', 'Tradicional'],
+      type: ['Individual', 'Combo'],
+      price: [50, 65],
+      ingredientes: ['Con todo', 'Sin'],
+      Especificaciones: []
     }
   ];
   totalOrder = 0;
   // Array temporal
   tempOrder = [];
   OrdersService: any;
-  @ViewChild(MatSort,{static: false}) sort: MatSort;
-  ngOnInit(){
+  @ViewChild(MatSort, {static: false}) sort: MatSort;
+  // tslint:disable-next-line:use-lifecycle-interface
+  ngOnInit() {
     //  llamando todas las órdenes
     this.getAllOrders();
   }
-  onAddProduct(product){
+  onAddProduct(product) {
     console.log(product);
     // suma de todos los precios
     this.totalOrder = (this.totalOrder + product.price[0]);
-    console.log(this.totalOrder )
+    console.log(this.totalOrder );
     // Impresión de precio y producto en comanda
-    this.tempOrder.push(product.name + " " + "$"+ product.price[0])
+    this.tempOrder.push(product.name + ' ' + '$' + product.price[0]);
   }
-  removeItemOrder =(order) =>{
-    let index = this.tempOrder.indexOf(order);
-    if (index > -1) this.tempOrder.splice(index, 1);
-  };
-  onSubmit(){
+  removeItemOrder = (order) => {
+    const index = this.tempOrder.indexOf(order);
+    if (index > -1) { this.tempOrder.splice(index, 1); }
+  }
+  onSubmit() {
     console.log(this.orderService.myForm.value);
     // Agregando al array temporal el # de orden y el cliente
     this.orderService.myForm.value.order = this.tempOrder;
-    let data = this.orderService.myForm.value;
+    const data = this.orderService.myForm.value;
     // console.log(data);
     data.totalOrder = this.totalOrder;
     // llamada al servicio
@@ -89,7 +95,7 @@ export class MenuComponent {
     // limpiando el array
     this.tempOrder = [];
     // Reinicializando a 0 el total de la orden
-    this.totalOrder=0;
+    this.totalOrder = 0;
     // Reinicializando el formulario
     this.orderService.myForm.reset();
   }
