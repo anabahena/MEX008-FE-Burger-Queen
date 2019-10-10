@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1570688718393,
+  "timestamp": 1570697190921,
   "index": "/MEX008-FE-Burger-Queen/index.html",
   "assetGroups": [
     {
@@ -9,8 +9,8 @@
       "updateMode": "prefetch",
       "urls": [
         "/MEX008-FE-Burger-Queen/index.html",
-        "/MEX008-FE-Burger-Queen/main-es2015.8e29b8b7dda17ef5e3f9.js",
-        "/MEX008-FE-Burger-Queen/main-es5.8e29b8b7dda17ef5e3f9.js",
+        "/MEX008-FE-Burger-Queen/main-es2015.a1f294c6fdc8539957d4.js",
+        "/MEX008-FE-Burger-Queen/main-es5.a1f294c6fdc8539957d4.js",
         "/MEX008-FE-Burger-Queen/manifest.webmanifest",
         "/MEX008-FE-Burger-Queen/polyfills-es2015.0c367da301dfce13c189.js",
         "/MEX008-FE-Burger-Queen/polyfills-es5.fcc138b5815cd4c4c808.js",
@@ -61,9 +61,9 @@
     "/MEX008-FE-Burger-Queen/assets/malicia.png": "398fe3deafc65c83473bf41fd275a8a3cc3b3e3a",
     "/MEX008-FE-Burger-Queen/assets/products.json": "944a55f11cdcc7ef0ed1b9e6906bcedd967cea3a",
     "/MEX008-FE-Burger-Queen/assets/soberbia.png": "84ca2b56db711e6676aed0d2435c414853c1c9d3",
-    "/MEX008-FE-Burger-Queen/index.html": "3f6896a75626e049c13bb0dc628fbd8e7d0f5d86",
-    "/MEX008-FE-Burger-Queen/main-es2015.8e29b8b7dda17ef5e3f9.js": "98bdd21de7ca0e299214a48fc61fa8a6ccf507b7",
-    "/MEX008-FE-Burger-Queen/main-es5.8e29b8b7dda17ef5e3f9.js": "d191c3583683e4713dde0276021c86e8c302468e",
+    "/MEX008-FE-Burger-Queen/index.html": "c6aceaaeb05443eac9039d66aebd174c5df08e79",
+    "/MEX008-FE-Burger-Queen/main-es2015.a1f294c6fdc8539957d4.js": "a73aee111e1d9bc74d4b6d71c72ab3b1a3ea72ac",
+    "/MEX008-FE-Burger-Queen/main-es5.a1f294c6fdc8539957d4.js": "52f6f3264034cade868354551fc0feeb988f5819",
     "/MEX008-FE-Burger-Queen/manifest.webmanifest": "33258288e90487f438b530cf54b80e8bfd0f382c",
     "/MEX008-FE-Burger-Queen/polyfills-es2015.0c367da301dfce13c189.js": "f2ccbe2ca4a43b9d945c6dc4aa498cf13cc6a613",
     "/MEX008-FE-Burger-Queen/polyfills-es5.fcc138b5815cd4c4c808.js": "adbf9753787b0a9e4b67a089d37c147be01e0009",
