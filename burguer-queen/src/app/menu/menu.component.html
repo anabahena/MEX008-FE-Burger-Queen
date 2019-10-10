@@ -39,7 +39,7 @@
     <mat-drawer-container class="example-container" autosize fxLayout="row" fxLayoutAlign="start center">
       <mat-drawer #drawer  class="container-hamburguers" mode="side" fxLayout="column" fxLayoutAlign="start center">
         <mat-grid-list cols="2" rowHeight="2:2" class="content-table">
-          <mat-grid-tile class="each-product" *ngFor="let product of products" (click)="onAddProduct(product)">
+          <mat-grid-tile class="each-product" *ngFor="let product of products"  (click)="onAddProduct(product)">
             <figure class="mat-figure"><img src="{{product.img}}" alt="{{product.name}}" ><p>{{product.name}}</p></figure>
           </mat-grid-tile>
         </mat-grid-list>

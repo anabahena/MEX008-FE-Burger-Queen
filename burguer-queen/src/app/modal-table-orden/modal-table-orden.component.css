@@ -1,10 +1,29 @@
+.modalOrden .mat-dialog-container{
+    padding: 0;
+    border-radius: 20px;
+    width: 60vw;
+    height: 50vh;
+}
+
 .modalOrden{
-    width: 400px;
-    height: 200px;
-    margin: 30px;
+    width: 50vw;
+    height: 40vh;
+    margin: 10px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    border-radius:47px;
+}
 
+.btn-send{
+background: none;
+border-style: none;
+}
 
+.btn-send:hover{
+    background: #FFE867;
+    border-radius: 15px;
+    
 }
