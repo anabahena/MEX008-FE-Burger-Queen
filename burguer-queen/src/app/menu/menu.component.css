@@ -105,10 +105,10 @@ background: white;
 .container-hamburguers {
     border: none;
     margin:0;
-    padding: 2em 1em 0 1em;
+    /*padding: 2em 1em 0 1em;*/
     border-radius: 0  10px 10px  0;
-    width: 38vw;
-    height: 57vh;
+    width: 32vw;
+    height: 50vh;
     background: #f7f7f7;
 }
 
@@ -278,20 +278,10 @@ background: white;
       padding-top: 2em;
     }
 
-  .content-table {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-  }
 
-  .content-table img , tr, td {
-    padding: 0 0.7em;
-    margin: 0;
-    text-align: center;
-  }
 
-  .content-table p {
+
+.content-table p {
     margin: 0.5em  0;
     font-size: 20px;
     font-style: italic;
@@ -300,19 +290,35 @@ background: white;
 
   }
 
+.content-table {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  width: 50%;
+}
+
   .each-product {
     padding: 0;
     margin: 0;
+    height: 50%;
+    width: 50%;
   }
 
 
 .mat-grid-tile .mat-figure {
   display: block;
   text-align: center;
+  width: 50%;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+
   }
 
 .mat-grid-tile img{
-  width: 10em;
+  width: 7em;
 }
 
 .other-modal {
@@ -322,3 +328,4 @@ background: white;
   border-radius: 10px;
   opacity: 1;
 }
+
