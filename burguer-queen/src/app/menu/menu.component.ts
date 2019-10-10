@@ -62,6 +62,15 @@ export class MenuComponent {
   //   }
   // ];
 
+  displayedColumns: string[] = ['orderNumber', 'customerName','actions'];
+  dataSource= new MatTableDataSource ();
+  constructor(private orderService: OrdersService){
+
+  }
+  showFiller = false;
+  "products" = [];
+
+
   // Propiedades
   totalOrder = 0;
   // Array temporal
